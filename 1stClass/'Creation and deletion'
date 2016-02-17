@@ -1,0 +1,11 @@
+touch filename = Create an empty document (File)
+
+mkdir Directoryname = Create an empty directory (Folder)
+
+gedit filename = Create an empty document (File) + Open it in a GUI based text editor "GEDIT"
+
+rmdir Directoryname = Remove an empty directory
+
+rm -r Directoryname = Remove a non-empty directory
+
+rm filename = Remove document
