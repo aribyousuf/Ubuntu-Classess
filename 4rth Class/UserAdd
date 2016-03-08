@@ -1,0 +1,23 @@
+#To Add User
+
+sudo useradd username #adding a user
+
+sudo passwd username #assigning him a password **make sure that the username will be same in both the commands
+
+sudo useradd -d /home/username -m username #adding a user with a home directory
+where -d option is for directory path and -m option is for creating this directory
+
+sudo deluser username #deleting a user
+
+sudo rm -r /home/username #deleting a home directory of a user which you have deleted
+
+#To Add User (Alternative Command)
+
+sudo adduser username #add a user alongwith password, home directory and other details 
+
+
+Information of all the users are stored in this file => /etc/passwd
+
+Password of each user is stored in this file in Encrypted form => /etc/shadow
+
+

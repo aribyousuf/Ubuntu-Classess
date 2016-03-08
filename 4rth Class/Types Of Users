@@ -1,0 +1,18 @@
+#There are two types of users
+1. root (who can do everything) also known as Super User
+2. normal user (who has access only to his home directory and all the directory under it)
+
+To accomplish task outside our home directory like creating files, directories and links and installing softwares etc we need super user privileges.
+There are two types of doing this:
+1.To become a root we use a command:
+sudo su => means super user do super user
+to end this session we use:
+exit
+
+2.To use super user power/controls/privileges. 
+To use this method we need to add => sudo  
+before every command
+
+**super user is denoted by # sign on command line
+
+

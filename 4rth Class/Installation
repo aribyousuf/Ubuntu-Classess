@@ -1,0 +1,16 @@
+#how to install a software 
+
+Advance Package Tool (APT) is an advance interface to install package/software easily via Command line from software repositories of ubuntu.
+We use this tool with a command => apt-get
+its 4 basic functions are:
+1. Install
+e.g => sudo apt-get install packagename #install package
+2. Remove
+e.g => sudo apt-get remove packagename #remove package
+3. Update
+e.g => sudo apt-get update #update repositories
+4. Upgrade
+e.g => sudo apt-get upgrade #upgrade install packages 
+
+Apt stores a list of repositories or software channels in the file => /etc/apt/sources.list
+
