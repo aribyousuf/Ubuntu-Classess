@@ -1,0 +1,35 @@
+Data compression is the process of removing redundancy from data.
+
+Compression algorithms (the mathematical techniques used to carry out the compression) fall into two general categories, lossless and lossy. 
+
+Lossless compression preserves all the data contained in the original. This means that when a file is restored from a compressed version, the restored file is exactly the same as the original, uncompressed version. 
+
+Lossy compression, on the other hand, removes data as the compression is performed, to allow more compression to be applied. When a lossy file is restored, it does not match the original version; rather, it is a close approximation. Examples of lossy compression are JPEG (for images) and MP3 (for music). In our discussion, we will look exclusively at lossless compression, since most data on computers cannot tolerate any data loss. 
+
+The gzip program is used to compress one or more files. When executed, it replaces the original file with a compressed version of the original. The corresponding gunzip program is used to restore compressed files to their original, uncompressed form.
+
+Syntax for compressing a file/directory:
+gzip filename/directoryname
+
+Syntax for uncompressing a file/directory:
+gunzip compressedfilename.gz
+***you can omitt the .gz extension
+
+How to compress a file/directory:
+example:
+
+gzip abc.sh
+
+in the above command we're compressing a file named "abc.sh".
+After running this command you will see that the original file will be replaced with the compressed version, and that the compressed version is about one-fifth the size of the original.
+-The compressed file has the same permissions and timestamp as the original.
+
+How to uncompress a file/directory:
+example:
+
+gunzip abc.sh.gz
+
+in the above command we're uncompressing a compressed file named "abc.sh.gz".
+After running this command we will see that the compressed version of the file will be replaced with the original, again with the permissions and timestamp preserved.
+
+

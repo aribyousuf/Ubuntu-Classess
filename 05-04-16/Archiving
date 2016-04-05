@@ -1,0 +1,33 @@
+Archiving is the process of gathering up many files and bundling them together into a single large file.
+
+In the Unix-like world of software, the "tar" program is the classic tool for archiving files. Its name, short for tape archive.
+
+A tar archive can consist of a group of separate files, one or more directory hierarchies, or a mixture of both. The command syntax works like this: 
+
+Syntax for creating tar archive:
+tar -option tarfilename files/directories
+
+Syntax for extracting tar archive:
+tar -option tarfilename 
+
+
+How to create a tar archive:
+example:
+
+tar -cvf abc a b c
+
+in the above command we're creating tar archive named "abc" that contains 3 files named "a", "b" & "c" 
+-c = means create
+-v = verbose
+-f = specify the name of the tar archive
+
+How to extract a tar archive:
+example:
+
+tar -xvf abc 
+
+in the above command we're extracting tar archive named "abc"
+-x = means extract
+-v = verbose
+-f = specify the name of the tar archive
+
