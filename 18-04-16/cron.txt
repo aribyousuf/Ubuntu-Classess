@@ -1,0 +1,43 @@
+Cron stands for Command Run ON. It is a mechanism that allows you to tell the system to run certain commands at certain times. 
+So for instance, I could craft a script to check how much space is left on the disk that holds the home directories and send an email to 
+certain people if the free disk space gets below a certain amount. Then I would use cron to get this script to run automatically every hour.
+
+Cron allows a fair bit of control in terms of when commands are scheduled to run. Like most things in Linux, 
+it is managed by way of a text file. The layout of the text file can be a little daunting but once you get the hang of it it's not that bad. 
+There are many websites out there with good references to make it easy as well.
+
+The file that manages cron is called a crontab. Each user may have their own crontab and within 
+it each line represents a schedule for a particular command as follows:
+
+* * * * * command to execute
+
+Where the *'s represent (in order from left to right:
+
+Minutes (0 - 59)
+Hours (0 - 23)
+Day of Month (1 - 31)
+Months (1 - 12)
+Day of week (0 - 7) (0 and 7 are Sunday)
+A * in any of those places means every one of those increments.
+
+Some examples:
+
+* * * * * /bin/myscript.sh
+
+Execute myscript.sh every minute.
+
+30 3 * * 4 /bin/myscript.sh
+
+Execute myscript.sh every Thursday at 3:30am.
+
+To view a list of what tasks you currently have scheduled you may run the following command:
+
+crontab -l
+
+To edit your scheduled tasks, run the following command. It will open up in your default text editor which is normally Vim.
+
+crontab -e
+
+To remove your schedules tasks:
+
+cron -r
